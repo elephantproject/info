@@ -1,0 +1,18 @@
+{
+  "background_color": "#fff",
+  "display": "standalone",
+  "homepage_url": "https://elephantinfo.ac",
+  "icons": [
+    {
+      "src": "./images/270x270_App_Icon.png",
+      "sizes": "270x270",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "name": "Elephant Info",
+  "short_name": "Elephant Info",
+  "start_url": ".",
+  "theme_color": "#00a17e"
+}
