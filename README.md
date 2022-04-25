@@ -13,3 +13,9 @@ yarn
 ```bash
 yarn start
 ```
+
+##### Init
+
+Copy client & queries files into src/apollo directory
+
+Edit constants.js
