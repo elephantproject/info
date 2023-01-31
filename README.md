@@ -1,4 +1,8 @@
-# Elephant Info
+# Elephant Dex Info
+
+https://elephant.ac
+https://elephant.ac/casino
+
 
 ### To Start Development
 
