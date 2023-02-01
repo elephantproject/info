@@ -24,8 +24,6 @@ export default function GlobalStats() {
   const below400 = useMedia('(max-width: 400px)')
   const below816 = useMedia('(max-width: 816px)')
 
-  const [showPriceCard, setShowPriceCard] = useState(false)
-
   const { oneDayVolumeUSD, oneDayTxns, pairCount } = useGlobalData()
   const [ethPrice] = useEthPrice()
   const formattedOnePrice = ethPrice ? formattedNum(ethPrice, true) : '-'
@@ -36,16 +34,7 @@ export default function GlobalStats() {
       <RowBetween style={{ padding: below816 ? '0.5rem' : '.5rem' }}>
         <RowFixed>
           {!below400 && (
-            <TYPE.main
-              mr={'1rem'}
-              onMouseEnter={() => {
-                setShowPriceCard(true)
-              }}
-              onMouseLeave={() => {
-                setShowPriceCard(false)
-              }}
-              style={{ position: 'relative' }}
-            >
+            <TYPE.main mr={'1rem'} style={{ position: 'relative' }}>
               ONE Price: <Medium>{formattedOnePrice}</Medium>
             </TYPE.main>
           )}

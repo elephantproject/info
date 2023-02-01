@@ -120,7 +120,6 @@ function App() {
         globalChartData &&
         Object.keys(globalChartData).length > 0 ? (
           <BrowserRouter>
-            {/*<Route component={GoogleAnalyticsReporter} />*/}
             <Switch>
               <Route
                 exacts

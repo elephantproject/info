@@ -28,7 +28,7 @@ export function getTimeframe(timeWindow) {
       utcStartTime = utcEndTime.subtract(1, 'month').endOf('day').unix() - 1
       break
     case timeframeOptions.ALL_TIME:
-      utcStartTime = utcEndTime.subtract(1, 'year').endOf('day').unix() - 1
+      utcStartTime = utcEndTime.subtract(2, 'year').endOf('day').unix() - 1
       break
     default:
       utcStartTime = utcEndTime.subtract(1, 'year').startOf('year').unix() - 1
@@ -64,8 +64,6 @@ export function getSwapLink(token0Address, token1Address = null) {
     }&outputCurrency=${token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'ONE' : token1Address}`
   }
 }
-
-
 
 export function getUniswapAppLink(linkVariable) {
   let baseUniswapUrl = 'https://app.uniswap.org/#/uni'
