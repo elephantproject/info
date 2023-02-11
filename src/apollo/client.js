@@ -28,7 +28,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://harmony-graph.elk.finance/subgraphs/name/elkfinance/harmony-blocks',
+    uri: 'https://api.thegraph.com/subgraphs/name/elephantproject/harmony-blocks',
   }),
   cache: new InMemoryCache(),
 })
