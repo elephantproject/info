@@ -14,17 +14,16 @@ import Toggle from '../Toggle'
 import theme from '../../Theme'
 import TwitterLogo from '../../assets/twitter-logo.svg'
 import MediumLogo from '../../assets/medium-logo.svg'
-import TelegramLogo from '../../assets/telegram-logo.svg'
 import DiscordLogo from '../../assets/discord-logo.svg'
 
 const Wrapper = styled.div`
   height: ${({ isMobile }) => (isMobile ? 'initial' : '100vh')};
   background-color: ${({ theme }) => theme.bg1};
   color: ${({ theme }) => theme.text1};
-  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
   position: sticky;
   top: 0px;
-  z-index: 9999999;
+  z-index: 999;
   box-sizing: border-box;
   /* background-color: #1b1c22; */
 
@@ -209,9 +208,6 @@ function SideNav({ history }) {
               </a>
               <a href={'https://medium.com/@elephantdex'} rel="noopener noreferrer" target={'_blank'}>
                 <img src={MediumLogo} alt={'Elephant Dex medium logo'} />
-              </a>
-              <a href={'https://t.me/elephantdexchat'} rel="noopener noreferrer" target={'_blank'}>
-                <img src={TelegramLogo} alt={'Elephant Dex telegram logo'} />
               </a>
               <a href={'https://discord.com/invite/6fFvUghhg7'} rel="noopener noreferrer" target={'_blank'}>
                 <img src={DiscordLogo} alt={'Elephant Dex discord logo'} />

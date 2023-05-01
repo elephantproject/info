@@ -3,10 +3,12 @@ import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { Flex } from 'rebass'
-import { RowFixed } from '../Row'
+import { RowFixed, RowMod } from '../Row'
 
 import { BasicLink } from '../Link'
 import { useMedia } from 'react-use'
+
+import logo from '../../assets/elephantslotmachine.png'
 
 const TitleWrapper = styled.div`
   text-decoration: none;
@@ -48,11 +50,17 @@ export default function Title() {
   return (
     <TitleWrapper onClick={() => !below1080 && history.push('/')}>
       <Flex alignItems="center" style={{ justifyContent: 'space-between' }}>
-        <RowFixed>
-          <LogoText id="link" onClick={() => history.push('/')}>
-            Elephant Dex Info
-          </LogoText>
-        </RowFixed>
+        <RowMod>
+          <img
+            style={{
+              resizeMode: 'center',
+              height: 75,
+              width: 75,
+            }}
+            src={logo}
+            alt="Elephant Dex Logo Img"
+          ></img>
+        </RowMod>
         {below1080 && (
           <RowFixed style={{ alignItems: 'flex-end' }}>
             <BasicLink to="/home">

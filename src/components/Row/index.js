@@ -33,5 +33,9 @@ export const AutoRow = styled(Row)`
 export const RowFixed = styled(Row)`
   width: fit-content;
 `
+export const RowMod = styled(Row)`
+  width: fit-content;
+  padding: 2em;
+`
 
 export default Row
