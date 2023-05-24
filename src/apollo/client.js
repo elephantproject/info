@@ -30,5 +30,6 @@ export const blockClient = new ApolloClient({
   link: new HttpLink({
     uri: 'https://api.thegraph.com/subgraphs/name/elephantproject/harmony-blocks',
   }),
+
   cache: new InMemoryCache(),
 })

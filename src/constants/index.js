@@ -16,14 +16,10 @@ export const SUPPORTED_LIST_URLS__NO_ENS = [
 ]
 
 // hide from overview list
-export const TOKEN_BLACKLIST = [
-
-]
+export const TOKEN_BLACKLIST = ['']
 
 // pair blacklist
-export const PAIR_BLACKLIST = [
-
-]
+export const PAIR_BLACKLIST = []
 
 // warnings to display if page contains info about blocked token
 export const BLOCKED_WARNINGS = {

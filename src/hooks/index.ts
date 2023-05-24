@@ -7,7 +7,7 @@ import { useListedTokensMap } from '../contexts/Application'
 
 export function useColor(tokenAddress, token) {
   const tokenMap = useListedTokensMap()
-  const [color, setColor] = useState()
+  const [color, setColor] = useState('#FAAB14')
   // import theme
   if (tokenAddress && tokenMap) {
     const path = tokenMap[tokenAddress]?.logoURI

@@ -196,6 +196,11 @@ function SideNav({ history }) {
                 Elephant Dex
               </Link>
             </HeaderText>
+            <HeaderText>
+              <Link href="https://elephant.ac/casino" rel="noopener noreferrer" target="_blank">
+                Elephant Dex Casino
+              </Link>
+            </HeaderText>
 
             <HeaderText>
               <Link href="https://medium.com/@elephantdex" rel="noopener noreferrer" target="_blank">
