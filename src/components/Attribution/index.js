@@ -5,7 +5,7 @@ const Attribution = () => (
     <a href="https://github.com/elephantproject/info" rel="noopener noreferrer" target="_blank">
       Github
     </a>
-    <a href="https://elephant.ac" rel="noopener noreferrer" target="_blank">
+    <a href="https://" rel="noopener noreferrer" target="_blank">
       Elephant Dex
     </a>
   </p>

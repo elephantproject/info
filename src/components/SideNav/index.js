@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   top: 0px;
   z-index: 999;
   box-sizing: border-box;
-  /* background-color: #1b1c22; */
+  background-color: #1b1c22;
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;

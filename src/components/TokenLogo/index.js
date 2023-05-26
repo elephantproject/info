@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import OneLogo from '../../assets/one.jpg'
 import { useListedTokensMap } from '../../contexts/Application'
 
+import E from '../../assets/ELEPHANT.png'
+
 const BAD_IMAGES = {}
 
 const Inline = styled.div`
@@ -76,8 +78,8 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     <Inline>
       <Image
         {...rest}
-        alt={''}
-        src={path}
+        alt={'Elephant Dex & Casino Image'}
+        src={path === 'https://elephant.ac/static/media/elephant-token-logo.f1dd854b.png' ? E : path}
         size={size}
         onError={(event) => {
           BAD_IMAGES[address] = true
