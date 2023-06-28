@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   top: 0px;
   z-index: 999;
   box-sizing: border-box;
-  background-color: #1b1c22;
+  /* background-color: #1b1c22; */
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
@@ -41,7 +41,6 @@ const Option = styled.div`
   font-weight: 500;
   font-size: 14px;
   opacity: ${({ activeText }) => (activeText ? 1 : 0.6)};
-  color: ${({ theme }) => theme.text1};
   display: flex;
   :hover {
     opacity: 1;
