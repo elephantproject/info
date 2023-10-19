@@ -1,5 +1,7 @@
 # Elephant Dex Info
 
+
+https://elephantinfo.ac
 https://elephant.ac
 https://elephant.ac/casino
 
